@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" >
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="bg-main-section">
+        <nav class="relative container-sm pt-10 pb-20">
+            <div class="absolute -top-[20%] left-[5%] w-[170px] h-[170px] bg-[#9454DF] blur-2xl rounded-b-full"></div>
+            <div class="flex justify-between items-center w-full">
+                <div class="z-10">
+                    <img src="./imgs/logo.png" width="150" >
+                </div>
+                <div class="hidden lg:flex items-center justify-between space-x-8">
+                    <a href="#about" class="text-white hover:cursor-pointer hover:font-medium">О нас</a>
+                    <a href="#service" class="text-white hover:cursor-pointer hover:font-medium">Услуги</a>
+                    <a href="#nft" class="text-white hover:cursor-pointer hover:font-medium">Что такое NFT</a>
+                    <a href="#projects" class="text-white hover:cursor-pointer hover:font-medium">Наши проекты</a>
+                    <a href="#contact" class="text-white hover:cursor-pointer hover:font-medium">Контакты</a>
+                </div>
+                <button class="hidden lg:flex bg-transparent ring-2 ring-white rounded-lg px-6 py-3 text-white">Оставить заявку</button>
+                <img onclick="toggleMenu()" class="lg:hidden hover:cursor-pointer" src="./imgs/menu.svg" width="40" >
+            </div>
+        </nav>
+        <div class="container-sm py-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-16">
+                <div class="order-2 sm:order-1 flex justify-center items-center">
+                    <div class="flex flex-col items-start">
+                        <div class="rounded-lg px-6 py-2 bg-[#564180] text-white mb-4">NFT + business</div>
+                        <p class="text-white font-bold text-4xl mb-6">Разработка web3 и блокчейн-технологий</p>
+                        <p class="text-white text-lg">Cоздаем надежные и безопасные <br> блокчейн-решения</p>
+                        <div class="flex items-center mt-10">
+                            <button class="bg-white text-gray-800 px-10 py-4 text-xl rounded-xl">Оставить заявку</button>
+                            <button class="bg-[#1C1923] p-4 rounded-xl ml-2"><img src="./imgs/arrow-up-right.svg" width="30"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex order-1 sm:order-2 justify-center items-center">
+                    <img src="./imgs/hero.png" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <section id="about" class="relative bg-about-us pt-32">
+            <div class="relative container-sm pt-10">
+                <div class="absolute top-[80%] -left-[5%] w-[300px] h-[290px] bg-[#9454DF] blur-2xl rounded-full"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <div class="flex flex-col justify-start">
+                        <p class="text-white font-medium text-4xl mb-8">[Кто мы]</p>
+                        <p class="text-white text-lg mb-10">CryptoLogic — ведущая компания в разработке Web3 и блокчейн-технологий. Наша команда IT-экспертов CryptoLogic занимается разработкой AI-продуктов: 3D-рендеринг, чат-боты и инструменты для прогнозирования объема продаж.</p>
+                        <div class="flex space-x-2 z-10">
+                            <div class="bg-card shadow rounded-lg px-4 py-2">
+                                <div class="flex items-center space-x-2">
+                                    <img src="./imgs/Vector.svg" width="20">
+                                    <p class="text-white">Инновации</p>
+                                </div>
+                            </div>
+                            <div class="bg-card shadow rounded-lg px-4 py-2">
+                                <div class="flex items-center space-x-2">
+                                    <img src="./imgs/Vector-2.svg" width="20">
+                                    <p class="text-white">Web3</p>
+                                </div>
+                            </div>
+                            <div class="bg-card shadow rounded-lg px-4 py-2">
+                                <div class="flex items-center space-x-2">
+                                    <img src="./imgs/Vector-4.svg" width="20">
+                                    <p class="text-white">AI-технологии</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 mt-2 z-10">
+                            <div class="bg-card shadow rounded-lg px-4 py-2">
+                                <div class="flex items-center space-x-2">
+                                    <img src="./imgs/Vector-1.svg" width="20">
+                                    <p class="text-white">Безопасность</p>
+                                </div>
+                            </div>
+                            <div class="bg-card shadow rounded-lg px-4 py-2">
+                                <div class="flex items-center space-x-2">
+                                    <img src="./imgs/Vector-3.svg" width="20">
+                                    <p class="text-white">Бизнес</p>
+                                </div>
+                            </div>
+                            <div class="bg-card shadow rounded-lg px-4 py-2">
+                                <div class="flex items-center space-x-2">
+                                    <img src="./imgs/Vector-5.svg" width="20">
+                                    <p class="text-white">Блокчейн</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img class="z-10" src="./imgs/about-us.png" >
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="service" class="bg-blockchain">
+            <div class="py-32">
+                <div class="container-sm py-10">
+                    <p class="text-white font-medium text-4xl mb-12">[Где применяют блокчейн-технологии?]</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-card shadow rounded-lg p-8">
+                            <div class="flex flex-col justify-start text-white">
+                                <img src="./imgs/b1.svg" width="30" >
+                                <p class="font-medium text-xl mt-4">Цифровые идентификаторы</p>
+                                <p class="text-sm mt-2">Блокчейн позволяет создавать надежные цифровые идентификаторы, облегчая процессы идентификации и безопасного доступа</p>
+                            </div>
+                        </div>
+                        <div class="bg-card shadow rounded-lg p-8">
+                            <div class="flex flex-col justify-start text-white">
+                                <img src="./imgs/b4.svg" width="30" >
+                                <p class="font-medium text-xl mt-4">Государственные услуги</p>
+                                <p class="text-sm mt-2">Блокчейн улучшает прозрачность и эффективность государственных услуг, включая электронное голосование и государственные реестры</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                        <div class="bg-card shadow rounded-lg p-8">
+                            <div class="flex flex-col justify-start text-white">
+                                <img src="./imgs/b2.svg" width="30" >
+                                <p class="font-medium text-xl mt-4">Финансовые транзакции</p>
+                                <p class="text-sm mt-2">Блокчейн обеспечивает безопасность и прозрачность финансовых транзакций, улучшая их эффективность</p>
+                            </div>
+                        </div>
+                        <div class="bg-card shadow rounded-lg p-8">
+                            <div class="flex flex-col justify-start text-white">
+                                <img src="./imgs/b3.svg" width="30" >
+                                <p class="font-medium text-xl mt-4">Управление данными и авторскими правами</p>
+                                <p class="text-sm mt-2">Блокчейн гарантирует целостность данных и защиту авторских прав</p>
+                            </div>
+                        </div>
+                        <div class="bg-card shadow rounded-lg p-8">
+                            <div class="flex flex-col justify-start text-white">
+                                <img src="./imgs/b5.svg" width="30" >
+                                <p class="font-medium text-xl mt-4">Управление цепями поставок</p>
+                                <p class="text-sm mt-2">Блокчейн обеспечивает прозрачность и доверие в управлении цепями поставок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="nft" class="hidden sm:block bg-[#010102]">
+        <div class="container-sm py-20">
+            <div class="grid grid-cols-2 gap-8">
+                <div class="flex items-start">
+                    <p class="text-white font-medium text-4xl">[Что такое NFT Технология]</p>
+                </div>
+                <div class="text-white text-sm">
+                    Основана на блокчейне и позволяет создавать уникальные цифровые активы, которые не могут быть заменены или взаимозаменяемы друг с другом, в отличие от токенов. Основная идея заключается в создании цифровых объектов, которые могут быть уникальными, иметь свою уникальную идентификацию и историю владения. NFT используют технологию блокчейна для гарантированной прозрачности, безопасности и неподдельности этих активов.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-advantages">
+        <div class="container-sm py-20">   
+            <p class="text-white font-medium text-4xl mb-12">[Преимущества NFT Технологии]</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white shadow rounded-xl px-4 py-10">
+                    <p class="text-black font-medium text-lg mb-6">Современность</p>
+                    <p class="text-black">
+                        NFT-технология представляет собой инновационный подход к созданию и управлению уникальными цифровыми активами
+                    </p>
+                </div>
+                <div class="bg-[#9353DE] shadow rounded-xl px-4 py-10">
+                    <p class="text-white font-medium text-lg mb-6">Безопасность</p>
+                    <p class="text-white">
+                        При создании документа ему присваивается уникальный идентификатор. Благодаря этому документ не может быть подделан или изменен, так как информация о нем хранится в неизменяемом и общедоступном блокчейне
+                    </p>
+                </div>
+                <div class="bg-card shadow rounded-xl px-4 py-10">
+                    <p class="text-white font-medium text-lg mb-6">Уникальность</p>
+                    <p class="text-white">
+                        Каждый NFT содержит информацию о своем создателе, владельце, истории переходов владения и других метаданных, которые делают его уникальным и неповторимым
+                    </p>
+                </div>
+                <div class="bg-[#503A7E] shadow rounded-xl px-4 py-10">
+                    <p class="text-white font-medium text-lg mb-6">Идентификация</p>
+                    <p class="text-white">
+                        Каждый NFT-документ содержит метаданные, такие как название документа, тип, дата создания, автор и другая информация, которая может быть полезна для его идентификации и классификации
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-nft">
+        <div class="container-sm py-20">
+            <p class="text-white font-medium text-4xl mb-12">[Где используют NFT Технологии]</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-card shadow p-6 rounded-xl">
+                    <div class="flex flex-col justify-between h-full space-y-20">
+                        <p class="text-white font-medium text-xl">Лицензирование и права на интеллектуальную собственность</p>
+                        <img src="./imgs/icon-4.svg" width="40" >
+                    </div>
+                </div>
+                <div class="bg-card shadow p-6 rounded-xl">
+                    <div class="flex flex-col justify-between h-full space-y-20">
+                        <p class="text-white font-medium text-xl">Предоставление права владения недвижимостью</p>
+                        <img src="./imgs/icon-5.svg" width="40" >
+                    </div>
+                </div>
+                <div class="bg-card shadow p-6 rounded-xl">
+                    <div class="flex flex-col justify-between h-full space-y-20">
+                        <p class="text-white font-medium text-xl">Земельные права и кадастры</p>
+                        <img src="./imgs/icon-6.svg" width="40" >
+                    </div>
+                </div>
+                <div class="bg-card shadow p-6 rounded-xl">
+                    <div class="flex flex-col justify-between h-full space-y-20">
+                        <p class="text-white font-medium text-xl">Лицензирование и права на интеллектуальную собственность</p>
+                        <img src="./imgs/icon-7.svg" width="40" >
+                    </div>
+                </div>
+                <div class="bg-card shadow p-6 rounded-xl">
+                    <div class="flex flex-col justify-between h-full space-y-20">
+                        <p class="text-white font-medium text-xl">Цифровые идентификационные документы</p>
+                        <img src="./imgs/icon.svg" width="40" >
+                    </div>
+                </div>
+                <div class="bg-card shadow p-6 rounded-xl">
+                    <div class="flex flex-col justify-between h-full space-y-20">
+                        <p class="text-white font-medium text-xl">Сертификация образования и квалификации</p>
+                        <img src="./imgs/icon-1.svg" width="40" >
+                    </div>
+                </div>
+                <div class="bg-card shadow p-6 rounded-xl">
+                    <div class="flex flex-col justify-between h-full space-y-20">
+                        <p class="text-white font-medium text-xl">Голосование и выборы: NFT</p>
+                        <img src="./imgs/icon-2.svg" width="40" >
+                    </div>
+                </div>
+                <div class="bg-card shadow p-6 rounded-xl">
+                    <div class="flex flex-col justify-between h-full space-y-20">
+                        <p class="text-white font-medium text-xl">Цифровые лицензии и разрешения</p>
+                        <img src="./imgs/icon-3.svg" width="40" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-last">
+        <div class="container-sm py-16">
+            <div id="projects" class="bg-white shadow rounded-2xl px-8 py-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                    <div class="text-black text-4xl">[Наши проекты]</div>
+                    <div class="flex flex-col justify-start">
+                        <p class="text-[#9353DE] text-xl mb-8">01 NFT-Дипломы</p>
+                        <p class="text-black text-sm mb-4">В настоящее время наша команда занимается разработкой платформы и NFT-дипломов для университета Narxoz</p>
+                        <p class="text-black text-sm">Мы создаем инновационную технологию, которая позволяет выпускникам университета получить NFT-дипломы в виде метаданных</p>
+                    </div>
+                </div>
+                <div class="bg-[#9353DE] rounded-xl shadow p-4 w-full mb-6 h-full">
+                    <p class="text-white font-medium text-xl mb-3">Легкий доступ для будущих работодателей</p>
+                    <p class="text-white text-sm">Наша платформа обеспечивает простой доступ для проверки подлинности диплома работодателями. Благодаря метаданным NFT-диплома, они могут быстро и удобно подтвердить его подлинность, что упрощает процесс найма и сокращает возможность мошенничества</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div class="bg-[#583285] rounded-xl shadow p-4 w-full mb-6 h-full">
+                        <p class="text-white font-medium text-xl mb-2">Защита от редактирования и фрода </p>
+                        <p class="text-white text-sm">Наша технология гарантирует, что NFT-дипломы невозможно редактировать или подделывать. Это обеспечивает высокий уровень защиты от попыток изменения или подделки дипломов, поддерживая непреложную подлинность и достоверность выпускников</p>
+                    </div>
+                    <div class="bg-nft-device rounded-xl">
+                        <div></div>
+                    </div>
+                    <div class="bg-[#0F0B1B] rounded-xl shadow p-4 w-full mb-6 h-full">
+                        <p class="text-white font-medium text-xl mb-2">Удобство и цифровизация</p>
+                        <p class="text-white text-sm">NFT-дипломы позволяют выпускникам иметь доступ к своим достижениям в электронном формате, что упрощает их сохранение, предоставление работодателям и обмен с другими цифровыми системами</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
+                    <div></div>
+                    <div class="flex flex-col justify-start">
+                        <p class="text-[#9353DE] text-xl mb-8">02 AI MODEL</p>
+                        <p class="text-black text-sm mb-4">Разработка виртуальной девушки с помощью AI технологий, которая будет позиционировать себя как Instagram блогер. </p>
+                        <p class="text-black text-sm">Девушка может заниматься ведением социальных сетей: снимать видео и фото, публиковать посты и высказывать собственное мнение</p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-rows-2 lg:grid-cols-3 lg:grid-flow-col gap-4">
+                    <div class="row-span-3">
+                        <img src="./imgs/ai-girl.png" class="w-full h-full" >
+                    </div>
+                    <div class="col-span-1">
+                        <div class="bg-[#9353DE] rounded-xl shadow p-4 w-full h-full">
+                            <p class="text-white font-medium text-xl mb-3">AI Model</p>
+                            <p class="text-white text-sm">Реалистичная виртуальная девушка с казахской внешностью, созданная с использованием передовых AI технологий</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1 row-span-2">
+                        <img src="./imgs/ai-girl1.png" class="w-full h-full" >
+                    </div>
+                    <div class="col-span-1">
+                        <div class="bg-[#7642B2] rounded-xl shadow p-4 w-full h-full">
+                            <p class="text-white font-medium text-xl mb-3">Взаимодействие через AI Instagram</p>
+                            <p class="text-white text-sm">Виртуальная девушка полностью базируется на AI технологиях и будет виртуально проживать в Казахстане</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div class="bg-[#3B2159] rounded-xl shadow p-4 w-full h-full">
+                            <p class="text-white font-medium text-xl mb-3">Потенциал AI</p>
+                            <p class="text-white text-sm">Проект демонстрирует потенциал AI технологий в создании виртуальных персон и их реалистичного взаимодействия</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div class="bg-[#0F0B1B] rounded-xl shadow p-4 w-full h-full">
+                            <p class="text-white font-medium text-xl mb-3">Исследование и разработка</p>
+                            <p class="text-white text-sm">Проект является результатом исследовательской работы и разработки, подтверждающей экспертизу CryptoLogic в области AI технологий</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 py-20">
+                <div class="flex flex-col justify-between h-full space-y-20">
+                    <p class="text-white text-3xl">[О нас говорят]</p>
+                    <img src="./imgs/speak-of-us.png" class="w-full" >
+                </div>
+                <div class="flex flex-col justify-between space-y-8">
+                    <p class="text-white text-s mt-4">
+                        «Внедрение NFT-дипломов является важным этапом цифровизации образования. Казахстан стремится стать лидером в цифровой трансформации государства и бизнеса. Внедрение цифровых дипломов исключит всякую возможность мошеннических действий с дипломами. NFT-дипломы невозможно будет подделать, так как они выпускаются с использованием технологии блокчейн. Отрадно, что Нархоз станет первым вузом в Центральной Азии, выпускающим NFT-дипломы. Динамика развития университета и такие смелые решения, как внедрение NFT-дипломов, говорит об открытости и прозрачности университета».
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <img src="./imgs/kz-republic.png" width="30" >
+                        <p class="text-white text-sm">Министерство цифрового развития, инноваций и аэрокосмической промышленности Республики Казахстан</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative py-20">
+                <div class="absolute top-0 -left-[5%] w-[300px] h-[290px] bg-[#9454DF] blur-2xl rounded-full"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 w-full">
+                    <div class="text-white font-medium text-3xl z-10">[Мы стремимся к большему]</div>
+                        <div class="flex flex-col space-y-8">
+                            <div class="z-10">
+                                <div class="flex items-center justify-between w-full mb-4">
+                                    <p class="text-xl font-medium text-white">Расширение клиентской базы</p>
+                                    <img src="./imgs/close.svg" width="35">
+                                </div>
+                                <div class="text-white">
+                                    <p class="mb-2">Мы стремимся привлечь больше университетов и образовательных учреждений для внедрения нашей технологии NFT-дипломов.</p>
+                                    <p>Мы уверены, что наша инновационная платформа будет полезна для множества учебных заведений, и мы активно будем расширять наше присутствие в этой области.</p>
+                                </div>
+                            </div>
+                            <div class="z-10">
+                                <div class="flex items-center justify-between w-full mb-4">
+                                    <p class="text-xl font-medium text-white">Развитие дополнительных функциональностей</p>
+                                    <img src="./imgs/close.svg" width="35">
+                                </div>
+                            </div>
+                            <div class="z-10">
+                                <div class="flex items-center justify-between w-full mb-4">
+                                    <p class="text-xl font-medium text-white">Исследование новых областей применения блокчейн и AI</p>
+                                    <img src="./imgs/close.svg" width="35">
+                                </div>
+                            </div>
+                            <div class="z-10">
+                                <div class="flex items-center justify-between w-full mb-4">
+                                    <p class="text-xl font-medium text-white">Партнерства и сотрудничество</p>
+                                    <img src="./imgs/close.svg" width="35">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-request">
+        <div class="container-sm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                <div class="flex flex-col">
+                    <p class="text-white font-medium text-3xl mb-12">
+                        [Оставьте заявку, чтобы связаться с нами]
+                    </p>
+                    <form class="flex flex-col">
+                        <input
+                            type="text"
+                            class="bg-card rounded-lg text-white px-6 py-3 border-0 outline-none mb-3"
+                            placeholder="Имя"
+                        >
+                        <input
+                            type="tel"
+                            class="bg-card text-white rounded-lg px-6 py-3 border-0 outline-none mb-3"
+                            placeholder="+7 (123) 456-78-90"
+                        >
+                        <input
+                            type="email"
+                            class="bg-card text-white rounded-lg px-6 py-3 border-0 outline-none mb-8"
+                            placeholder="Email"
+                        >
+                        <div>
+                            <button type="submit" class="rounded-lg bg-white px-8 py-3 text-black">Оставить заявку</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="./imgs/form-img.png" >
+                </div>
+                
+            </div>
+            <div class="block py-24">
+                <p class="font-medium text-3xl mb-12 text-white">[Партнеры]</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 items-center gap-6">
+                    <img src="./imgs/verny-capital.png" >
+                    <img src="./imgs/narxoz.png" >
+                    <img src="./imgs/institute.png" >
+                    <img src="./imgs/zhambyl.png" >
+                </div>
+            </div>
+        </div>
+        <footer class="bg-footer">
+            <div class="container-sm py-10">
+                <div class="flex flex-wrap gap-8 items-center justify-between w-full">
+                    <img src="./imgs/logo-white.png" width="140" >
+                    <div class="order-3 lg:order-2 flex items-center text-xs justify-between space-x-2 md:space-x-6 md:text-sm">
+                        <a href="#about" class="text-white hover:cursor-pointer">О нас</a>
+                        <a href="#service" class="text-white hover:cursor-pointer">Услуги</a>
+                        <a href="#nft" class="text-white hover:cursor-pointer">Что такое NFT</a>
+                        <a href="#projects" class="text-white hover:cursor-pointer">Наши проекты</a>
+                        <a href="#contact" class="text-white hover:cursor-pointer">Контакты</a>
+                    </div>
+                    <div class="order-2 lg:order-3 flex flex-col text-white text-sm">
+                        <a href="mailto:info@cryptologic.kz" class="mb-2">info@cryptologic.kz</a>
+                        <a href="tel:+77082063529">+7 (708) 206 35-29</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="mobile-menu" class="hidden menu-wrapper absolute z-20 top-0 left-0 w-full h-screen bg-main-section p-6">
+        <div class="container-sm relative h-full">
+            <div class="flex items-center justify-between py-10">
+                <img src="./imgs/logo.png" width="150" >
+                <button onclick="toggleMenu()">
+                    <img src="./imgs/close.svg" width="40" >
+                </button>
+            </div>
+            
+            <div class="flex flex-col text-xl text-gray-800 pt-10">
+                <div id="about-mobile" class="text-white hover:cursor-pointer mb-4">
+                    О нас
+                </div>
+                <div id="service-mobile" class="text-white hover:cursor-pointer  mb-4">
+                    Услуги
+                </div>
+                <div id="nft-mobile" class="text-white hover:cursor-pointer  mb-4">
+                    Что такое NFT
+                </div>
+                <div id="project-mobile" class="text-white hover:cursor-pointer  mb-4">
+                    Наши проекты
+                </div>
+                <div id="contact-mobile" class="text-white hover:cursor-pointer  mb-4">
+                    Контакты
+                </div>
+            </div>
+            <div class="absolute bottom-[5%] left-0 w-full">
+                <div class="flex items-center w-full text-lg justify-between text-white">
+                    <a href="tel:+77082063529">+7 (708) 206 35-29</a>
+                    <a href="mailto:info@cryptologic.kz">info@cryptologic.kz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.menu-wrapper {
+    transition: 1s ease-in-out;
+    top: 0;
+}
+
+.bg-main-section {
+    background: linear-gradient(150.94deg, #302355 10.82%, #010102 69.05%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-about-us {
+    background: linear-gradient(208deg, #010102 23.06%, #1E1636 86.07%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-blockchain {
+    background: linear-gradient(-28.63deg, #010102 23.06%, #1E1636 86.07%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-advantages {
+    background: linear-gradient(208.63deg, #010102 23.06%, #1E1636 86.07%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-nft {
+    background: linear-gradient(-28deg, #010102 23.06%, #1E1636 86.07%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-last {
+    background: linear-gradient(208.63deg, #010102 23.06%, #1E1636 86.07%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-request {
+    background: linear-gradient(0deg, #010102 -10.42%, #1E1636 84.84%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) -43.75%, rgba(255, 255, 255, 0) 211.25%);
+}
+
+.bg-footer {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) -43.75%, rgba(255, 255, 255, 0) 211.25%);
+}
+
+.blur-circle {
+    background-image: url("./imgs/blur-circle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    background-size: 400px;
+}
+
+.blur-circle-about1 {
+    background-image: url("./imgs/blur.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+    background-size: 400px;
+}
+
+.blur-circle-about2 {
+    background-image: url("./imgs/blur3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+    background-size: 400px;
+}
+
+.blur-circle-more {
+    background-image: url("./imgs/blur4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0px -30px;
+    background-size: 300px;
+}
+
+.bg-nft-device {
+    background-image: url("./imgs/nft-name.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-sm {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container-sm {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container-sm {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container-sm {
+        width: 1170px;
+    }
+}
