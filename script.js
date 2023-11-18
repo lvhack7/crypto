@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var allImages = document.querySelectorAll("img");
+
+    allImages.forEach(function(image) {
+      image.loading = "lazy";
+    });
+});
+
 document.getElementById("about-mobile").addEventListener('click', function() {
     toggleMenu()
     const targetSection = document.getElementById("about");
