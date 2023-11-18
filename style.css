@@ -9,6 +9,12 @@ html, body {
     top: 0;
 }
 
+.bg-main {
+    background-image: url("./imgs/bg-main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .bg-main-section {
     background: linear-gradient(150.94deg, #302355 10.82%, #010102 69.05%);
     background-repeat: no-repeat;
